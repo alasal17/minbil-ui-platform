@@ -1,0 +1,66 @@
+/* src/components/SignupPopup.css */
+.signup-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .signup-popup__content {
+    background-color: #FBFFF5;
+    padding: 40px;
+    border-radius: 8px;
+    width: 400px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .signup-popup__content h2 {
+    color: #01111D;
+    margin-bottom: 20px;
+  }
+  
+  .signup-popup__content input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #E0E0E0;
+    border-radius: 4px;
+  }
+  
+  .signup-popup__content .signup-btn {
+    background-color: #1A7CFF;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    width: 100%;
+    cursor: pointer;
+  }
+  
+  .signup-popup__content .cancel-btn {
+    background-color: #FF0000;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    width: 100%;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .error {
+    color: #FF0000;
+    margin-top: 10px;
+  }
+  
+  .success {
+    color: #17DB4E;
+    margin-top: 10px;
+  }
+  

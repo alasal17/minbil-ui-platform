@@ -1,0 +1,68 @@
+/* src/components/Navbar.css */
+.navbar {
+    background-color: #FBFFF5; /* Background color of navbar */
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    position: sticky ;
+    top: 0px;
+}
+
+.navbar__logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #01111D;
+}
+
+.navbar__links {
+    display: flex;
+    list-style: none;
+}
+
+.navbar__links li {
+    margin-left: 20px;
+}
+
+.navbar__links .login-btn,
+.navbar__links .signup-btn {
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    border: 2px solid transparent; /* For hover border effect */
+    transition: background-color 0.3s, border 0.3s; /* Smooth transitions */
+    cursor: pointer;
+}
+
+/* Styling for Login button */
+.navbar__links .login-btn {
+    background-color: #EDEDED; /* Off white background */
+    color: #01111D; /* Text color */
+    border: 2px solid #EDEDED;
+}
+
+.navbar__links .login-btn:hover {
+    background-color: #ffffff; /* White on hover */
+    border-color: #1A7CFF; /* Blue border on hover */
+}
+
+/* Styling for Signup button */
+.navbar__links .signup-btn {
+    background-color: #1A7CFF; /* Signup button color */
+    color: white; /* Text color for signup */
+    border: 2px solid #1A7CFF; /* Matching border */
+}
+
+.navbar__links .signup-btn:hover {
+    background-color: #005bb5; /* Darker blue on hover */
+    border-color: #005bb5; /* Matching hover border */
+}
+
+/* Add consistent padding for better alignment */
+.navbar__links .login-btn,
+.navbar__links .signup-btn {
+    padding: 10px 30px;
+    border-radius: 25px;
+}

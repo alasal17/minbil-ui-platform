@@ -1,0 +1,13 @@
+/* src/components/Footer.css */
+.footer {
+    background-color: #01111D;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer__links a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
