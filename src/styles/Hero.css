@@ -1,6 +1,7 @@
 /* src/components/Hero.css */
 .hero {
-    background: url('background-image.webp') no-repeat center center/cover;
+    /* background: url('background-image.webp') no-repeat center center/cover; */
+    background-color: darkgrey;
     padding: 150px 50px;
     color: white;
     text-align: center;
@@ -29,13 +30,17 @@
     background-color: #1A7CFF;
     color: white;
     padding: 15px 30px;
-    border-radius: 5px;
+    border-radius: 50px;
     text-decoration: none;
     font-size: 16px;
     cursor: pointer;
+    border: none;
+    font-weight: 600;
+
   }
   
   .hero__cta:hover {
     background-color: #005bb5;
-  }
+    font-weight: 200;
+}
   

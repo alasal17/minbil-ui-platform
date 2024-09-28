@@ -4,25 +4,26 @@ import '../../styles/Features.css';
 import easyBookingImage from '../../assets/easy-booking.webp'; // Placeholder for the generated image
 import optimizedForWorkshops from '../../assets/optimized-for-workshops.jpeg'; // Placeholder for the generated image
 import vehicleHistory from '../../assets/vehicle-history.jpg'; // Placeholder for the generated image
+
 const Features = () => {
     return (
         <div className="features">
-            <h2>Why Choose MinBil?</h2>
+            <h2>Hvorfor velge MinBil?</h2>
             <div className="features__grid">
                 <div className="feature-item">
-                    <img src={easyBookingImage} alt="Easy Booking" className="feature-image" />
-                    <h3>Easy Booking</h3>
-                    <p>MinBil offers an intuitive booking system that allows users to quickly schedule services with their preferred workshops. No more hassle with phone calls or waiting in queues – book with a few clicks, and manage all your upcoming appointments in one place.</p>
+                    <img src={easyBookingImage} alt="Enkel timebestilling" className="feature-image" />
+                    <h3>Enkel timebestilling</h3>
+                    <p>MinBil tilbyr et intuitivt bookingsystem som gjør det enkelt for verksteder å planlegge tjenester. Ikke mer telefoner eller køer – bestill tjenester med noen få klikk, og administrer kommende avtaler i ett system.</p>
                 </div>
                 <div className="feature-item">
-                    <img src={vehicleHistory} alt="Vehicle History" className="feature-image" />
-                    <h3>Vehicle History</h3>
-                    <p>Keep track of every service, repair, and inspection your vehicle has gone through. MinBil maintains a complete and easily accessible vehicle history, ensuring you always have the information you need for future services or when selling your car.</p>
+                    <img src={vehicleHistory} alt="Kjøretøyhistorikk" className="feature-image" />
+                    <h3>Kjøretøyhistorikk</h3>
+                    <p>Hold oversikt over alle servicer, reparasjoner og inspeksjoner dine kunders kjøretøy har gjennomgått. MinBil opprettholder en komplett og lett tilgjengelig historikk som hjelper deg med fremtidige tjenester og oppfølging.</p>
                 </div>
                 <div className="feature-item">
-                    <img src={optimizedForWorkshops} alt="Optimized for Workshops" className="feature-image" />
-                    <h3>Optimized for Workshops</h3>
-                    <p>MinBil provides workshops with a fully integrated platform to manage services, customer data, and appointments. Workshops can focus on delivering excellent service while the platform takes care of scheduling, notifications, and customer management.</p>
+                    <img src={optimizedForWorkshops} alt="Optimalisert for verksteder" className="feature-image" />
+                    <h3>Optimalisert for verksteder</h3>
+                    <p>MinBil gir verksteder en fullt integrert plattform for å administrere tjenester, kundedata og avtaler. Fokuser på å levere god service, mens systemet tar seg av planlegging, varslinger og kundeadministrasjon.</p>
                 </div>
             </div>
         </div>

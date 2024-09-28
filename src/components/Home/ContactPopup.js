@@ -29,43 +29,48 @@ const ContactPopup = ({ onClose }) => {
       onClose();
     }, 2000);
   };
-
+// Close popup when user clicks outside the content
+const handleClickOutside = (e) => {
+  if (e.target.classList.contains('contact-popup')) {
+    onClose();
+  }
+};
   return (
-    <div className="contact-popup">
+    <div className="contact-popup" onClick={handleClickOutside}>
       <div className="contact-popup__content">
-        <h2>Contact Us</h2>
+        <h2>Kontakt oss</h2>
         <form onSubmit={handleSubmit}>
           <input
             type="email"
-            placeholder="Email"
+            placeholder="E-post"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             required
           />
           <input
             type="tel"
-            placeholder="Phone"
+            placeholder="Telefon"
             value={phone}
             onChange={(e) => setPhone(e.target.value)}
             required
           />
           <input
             type="text"
-            placeholder="Title"
+            placeholder="Tittel"
             value={title}
             onChange={(e) => setTitle(e.target.value)}
             required
           />
           <textarea
-            placeholder="Your message"
+            placeholder="Din melding"
             value={message}
             onChange={(e) => setMessage(e.target.value)}
             required
           ></textarea>
           {error && <p className="error">{error}</p>}
           {success && <p className="success">Message sent successfully!</p>}
-          <button type="submit" className="contact-btn">Send Message</button>
-          <button type="button" className="cancel-btn" onClick={onClose}>Cancel</button>
+          <button type="submit" className="contact-btn">Send</button>
+          <button type="button" className="cancel-btn" onClick={onClose}>Avbryt</button>
         </form>
       </div>
     </div>

@@ -12,8 +12,8 @@ const Navbar = () => {
         <nav className="navbar">
             <div className="navbar__logo">MinBil</div>
             <ul className="navbar__links">
-                <li><button className="login-btn" onClick={() => setShowLogin(true)}>Login</button></li>
-                <li><button className="signup-btn" onClick={() => setShowSignup(true)}>Signup</button></li>
+                <li><button className="login-btn" onClick={() => setShowLogin(true)}>Logg inn</button></li>
+                <li><button className="signup-btn" onClick={() => setShowSignup(true)}>Ny bruker?</button></li>
             </ul>
             {showSignup && <SignupPopup onClose={() => setShowSignup(false)} />}
             {showLogin && <LoginPopup onClose={() => setShowLogin(false)} />}

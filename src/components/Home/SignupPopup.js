@@ -35,36 +35,43 @@ const SignupPopup = ({ onClose }) => {
     }
   };
 
+  // Close popup when user clicks outside the content
+  const handleClickOutside = (e) => {
+    if (e.target.classList.contains('signup-popup')) {
+      onClose();
+    }
+  };
+
   return (
-    <div className="signup-popup">
+    <div className="signup-popup" onClick={handleClickOutside}>
       <div className="signup-popup__content">
-        <h2>Signup</h2>
+        <h2>Register deg</h2>
         <form onSubmit={handleSignup}>
           <input
             type="email"
-            placeholder="Email"
+            placeholder="E-post"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             required
           />
           <input
             type="password"
-            placeholder="Password"
+            placeholder="Passord"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
             required
           />
           <input
             type="password"
-            placeholder="Confirm Password"
+            placeholder="Bekreft passord"
             value={confirmPassword}
             onChange={(e) => setConfirmPassword(e.target.value)}
             required
           />
           {error && <p className="error">{error}</p>}
           {success && <p className="success">Signup successful! Redirecting...</p>}
-          <button type="submit" className="signup-btn">Signup</button>
-          <button type="button" className="cancel-btn" onClick={onClose}>Cancel</button>
+          <button type="submit" className="signup-btn">Register</button>
+          <button type="button" className="cancel-btn" onClick={onClose}>Avbryt</button>
         </form>
       </div>
     </div>
