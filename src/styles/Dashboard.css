@@ -1,0 +1,26 @@
+/* src/styles/Dashboard.css */
+.dashboard {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-content {
+    display: flex;
+    margin-top: 60px; /* Space for the navbar */
+}
+
+.dashboard__content {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #FBFFF5;
+    margin-left: 250px; /* Adjust if sidebar is closed */
+    transition: margin-left 0.3s;
+}
+
+.sidebar.open + .dashboard__content {
+    margin-left: 250px;
+}
+
+.sidebar + .dashboard__content {
+    margin-left: 0;
+}

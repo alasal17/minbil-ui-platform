@@ -1,0 +1,22 @@
+/* src/styles/ClicksTable.css */
+.clicks-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .clicks-table th,
+  .clicks-table td {
+    border: 1px solid #EDEDED;
+    padding: 12px;
+    text-align: left;
+  }
+  
+  .clicks-table th {
+    background-color: #1A7CFF;
+    color: #FFFFFF;
+  }
+  
+  .clicks-table tr:nth-child(even) {
+    background-color: #F9F9F9;
+  }
+  

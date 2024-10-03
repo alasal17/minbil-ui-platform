@@ -1,0 +1,64 @@
+/* src/styles/AnalyticsSection.css */
+.analytics-section {
+    margin-top: 40px;
+    padding: 0 20px;
+    /* background-color: #EDEDED; */
+    padding: 10px;
+  }
+  
+  .charts-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .chart-item {
+    background-color: #FBFFF5;
+    padding: 20px;
+    border-radius: 8px;
+    width: 45%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  .chart-item h3 {
+    text-align: center;
+    color: #01111D;
+    margin-bottom: 20px;
+  }
+  
+  /* Styles for Tabs */
+  .analytics-tabs {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  
+  .tab-button {
+    background-color: #EDEDED;
+    color: #01111D;
+    padding: 10px 20px;
+    border: none;
+    margin-right: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .tab-button.active {
+    background-color: #1A7CFF;
+    color: #FFFFFF;
+  }
+  
+  .tab-button:hover {
+    background-color: #1A7CFF;
+    color: #FFFFFF;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .chart-item {
+      width: 100%;
+    }
+  }
+  

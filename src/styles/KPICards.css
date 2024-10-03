@@ -1,0 +1,59 @@
+/* src/styles/KPICards.css */
+.kpi-cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    padding: 0 20px;
+}
+
+.kpi-card {
+    background-color: #E6F1F7;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    width: 20%;
+    transition: transform 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.kpi-card:hover {
+    transform: translateY(-5px);
+}
+
+.kpi-card h3 {
+    font-size: 18px;
+    color: #01111D;
+    margin-bottom: 10px;
+    padding-left:10px ;
+    font-weight: 400;
+}
+
+.kpi-card p {
+    font-size: 24px;
+    padding-left: 5%;
+    color: #1A7CFF;
+    font-weight: 400;
+}
+
+.kpi-card .p-changes {
+    font-size: 15px;
+    padding-left: 5%;
+    color: #166e00;
+    font-weight:600;
+}
+
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .kpi-card {
+        width: 45%;
+    }
+}
+
+@media (max-width: 480px) {
+    .kpi-card {
+        width: 100%;
+    }
+}
