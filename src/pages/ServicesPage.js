@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import { addService, getServicesByUser, updateService, deleteService } from '../firebase';
 import { getAuth } from 'firebase/auth';
-import './ServicesPage.css'; // Import the new CSS
+import '../styles/ServicesPage.css'; // Import the new CSS
 
 const ServicesPage = () => {
   const [services, setServices] = useState([]);
