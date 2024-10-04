@@ -30,7 +30,7 @@ const AnalyticsSection = () => {
               className={`tab-button ${activeTab === 'table' ? 'active' : ''}`}
               onClick={() => setActiveTab('table')}
             >
-              Klikk
+              Klikk tabell
             </button>
           </div>
           {activeTab === 'chart' ? (

@@ -26,7 +26,7 @@ const Dashboard = () => {
       <Navbar toggleSidebar={toggleSidebar} />
       <div className="main-content">
         <Sidebar isOpen={sidebarOpen} />
-        <div className="dashboard__content">
+        <div className={`dashboard__content ${sidebarOpen ? 'sidebar-open' : ''}`}>
           <h1></h1>
           <KPICards data={kpiData} />
           <AnalyticsSection />
